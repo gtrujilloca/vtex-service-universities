@@ -1,0 +1,12 @@
+type Query {
+  queryUniversities(country: String!): [University]
+}
+
+type University {
+  domains: [String],
+  country: String,
+  alpha_two_code: String,
+  web_pages: [String],
+  state_province: String,
+  name: String
+}
